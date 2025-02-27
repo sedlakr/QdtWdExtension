@@ -22,7 +22,7 @@ function updateTimes() {
     }
   });
 }
-console.log("running script");
+console.log("Running  QdtWdExtension");
 globalThis.updateTime = updateTimes;
 
 setInterval(()=>{
