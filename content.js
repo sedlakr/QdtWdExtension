@@ -14,7 +14,6 @@ function convertTimeFormat(text) {
 function updateTimes() {
   document.querySelectorAll('*').forEach(node => {
     if (node.childNodes.length === 1 && node.childNodes[0].nodeType === 3) {
-		debugger;
       let newText = convertTimeFormat(node.textContent);
       if (newText !== node.textContent) {
         node.textContent = newText;
