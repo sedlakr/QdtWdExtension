@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Workday Time Formatter",
+  "version": "1.0",
+  "description": "Převádí hodiny ve Workday z formátu Hours: 1,5 na 1h 30m",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.myworkday.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
